@@ -4,16 +4,16 @@ import classnames from 'classnames'; // Opcional
 import lodash from 'lodash'; // Etapa 3
 import { useDispatch, useSelector } from 'react-redux' // Etapa 2
 
+import { isLoadingSelector } from '../../models/UI/selectors';
+
 const DEBOUNCE_DELAY = 500; // Etapa 3
 
 // Exported method can be either a function or a class
 
 const AutoCompleteInput = () => {
-  const dispatch = useDispatch();
 
-  const suggestions = useSelector((state) => state.suggestions);
-  const isLoading = useSelector((state) => state.ui.isLoading);
-
+  const suggestions = useSelector((state) => state.pokemons);
+  const isLoading = useSelector(isLoadingSelector);
 
   return (
 		<div className="wrapper">
