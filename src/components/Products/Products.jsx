@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Product from '../Product';
+import AutoCompleteInput from '../AutoCompleteInput';
 import AppContext from '../../lib/context/AppContext';
 import './Products.css';
 
@@ -13,6 +14,7 @@ const Products = () => {
 
   return (
     <div className="Products">
+      <AutoCompleteInput />
       <div className="Products-items">
         {products.map(product => (
           <Product key={product.id} product={product} handleAddToCart={handleAddToCart} />
