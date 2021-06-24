@@ -1,9 +1,9 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 
-import { APPLICATION_NAME } from 'constants';
-import reducer from 'models';
-import reduxDevTools from 'lib/reduxDevTools';
+import { APPLICATION_NAME } from './constants';
+import reducer from './models';
+import reduxDevTools from './lib/reduxDevTools';
 
 const middlewares = [thunkMiddleware];
 

@@ -9,6 +9,6 @@ const initialState = {
 export default produce((draft, action) => {
   switch (action.type) {
     case UIActions.SET_LOADING:
-      draft.ui.isLoading = action.setLoading;
+      draft.UI.isLoading = action.setLoading;
   }
 }, initialState);
