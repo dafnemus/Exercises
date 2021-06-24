@@ -1,25 +1,12 @@
 .wrapper {
-
-}
-
-.control {
-
+  margin-bottom: 20px;
 }
 
 .input {
-  width: 222px;
-  height: 51px;
+  width: 100%;
   padding: 10px;
-  background: #f3f3f3;
+  background: #fff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  border: none;
-}
-
-.list {
-
-}
-
-.is-hoverable {
-  
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
